@@ -20,9 +20,11 @@ const menuItem = [
 const headerMenuForm = [
     {
         name: 'Đăng nhập',
+        to: '/signin',
     },
     {
         name: 'Đăng kí',
+        to: '/register',
     },
 ];
 

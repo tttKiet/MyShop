@@ -6,16 +6,27 @@
     background-size: cover;
     background-clip: initial;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrap {
+    width: 1380px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .inner {
     height: 60px;
-    width: 1380px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
+
+// logo
 
 .logo {
     font-size: 2rem;
@@ -23,13 +34,17 @@
     line-height: 100%;
     font-weight: 500;
     letter-spacing: 2px;
+    width: calc(100% / 3);
 }
 
 // controls
 .controls {
     border-radius: 5px;
     background-color: rgb(255, 255, 255, 0.1);
+    width: calc(100% / 3);
     box-shadow: -2px 0px 1px 4px rgba(237, 235, 237, 0.03);
+    display: flex;
+    justify-content: center;
 }
 
 .item__list {
@@ -39,12 +54,85 @@
     padding: 6px 36px;
 }
 
+// form
 .form {
     display: flex;
     color: var(--text-color);
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: flex-end;
 }
 
-.form-item {
-    padding: 5px 10px;
-    border-radius: 5px;
+// Line
+.Line {
+    width: 200px;
+    height: 6px;
+    border-radius: 50px;
+    margin-top: 48px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+// container
+.container {
+    margin-top: 48px;
+    width: 100%;
+    display: flex;
+}
+
+.foreword {
+    width: 70%;
+}
+
+.foreword--img {
+    border-radius: 8px;
+    background-size: contain;
+    width: 30%;
+    background-image: url('../../../assets/imgs/header_person.jpeg');
+}
+
+// Loi mo dau
+.foreword-main {
+    font-size: 10rem;
+    line-height: 10.2rem;
+    display: inline-block;
+    letter-spacing: 8px;
+    font-weight: 800;
+}
+
+.foreword-main--min {
+    margin-left: 8px;
+    font-size: 2rem;
+    line-height: 10.2rem;
+    display: inline-block;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.foreword-main-max {
+    font-size: 12rem;
+    color: #fff;
+    letter-spacing: 8px;
+    line-height: 12.6rem;
+}
+
+.foreword-main-content {
+    width: 100%;
+    margin-top: 26px;
+}
+
+.foreword-main-text {
+    width: 50%;
+    font-size: 1.4rem;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.foreword-main-text + .foreword-main-text {
+    margin-top: 4px;
+}
+
+.img {
+    object-fit: contain;
 }

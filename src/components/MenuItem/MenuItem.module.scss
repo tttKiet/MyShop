@@ -1,11 +1,17 @@
 .Menu__item-link {
     border-radius: 5px;
+    color: var(--text-color);
     cursor: pointer;
     display: block;
     border-radius: 5px;
     padding: 4px 6px;
     // background-color: red;
     position: relative;
+    text-decoration: none;
+}
+
+.Menu__item-link:active {
+    color: var(--text-color);
 }
 
 .Menu__item-link + .Menu__item-link {

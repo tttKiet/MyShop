@@ -1,9 +1,10 @@
 import styles from './MenuItem.module.scss';
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function MenuItem({ content }) {
+function MenuItem({ to, content }) {
     // su ly su kien hover
     const handeHover = (e) => {
         if (!e.target.children[0]) return;
@@ -22,10 +23,15 @@ function MenuItem({ content }) {
     };
 
     return (
-        <a onMouseOver={(e) => handeHover(e)} onMouseOut={(e) => handeHoverOut(e)} className={cx('Menu__item-link')}>
+        <Link
+            to={to || '/'}
+            onMouseOver={(e) => handeHover(e)}
+            onMouseOut={(e) => handeHoverOut(e)}
+            className={cx('Menu__item-link')}
+        >
             {content}
             <span onMouseOver={() => {}} className={cx('rule')}></span>
-        </a>
+        </Link>
     );
 }
 

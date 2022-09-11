@@ -1,11 +1,10 @@
 .wrapper {
     height: 750px;
-    background-image: url('../../../assets/imgs/header_bạckground.jpeg');
+    background-image: url('../../../assets/imgs/background_header.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     background-clip: initial;
-
     display: flex;
     justify-content: center;
 }
@@ -29,7 +28,7 @@
 // controls
 .controls {
     border-radius: 5px;
-    background-color: rgba(237, 235, 237, 0.3);
+    background-color: rgb(255, 255, 255, 0.1);
     box-shadow: -2px 0px 1px 4px rgba(237, 235, 237, 0.03);
 }
 
@@ -38,29 +37,6 @@
     color: var(--text-color);
     list-style: none;
     padding: 6px 36px;
-}
-
-.item__link {
-    border-radius: 5px;
-}
-
-.item__link > a {
-    cursor: pointer;
-}
-
-.item__link-text {
-    display: block;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 4px 6px;
-}
-
-.item__link-text:hover {
-    background-color: rgba(237, 235, 237, 0.5);
-}
-
-.item__link + .item__link {
-    margin-left: 10px;
 }
 
 .form {

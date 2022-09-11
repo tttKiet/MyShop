@@ -1,0 +1,25 @@
+.Menu__item-link {
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+    padding: 4px 6px;
+    // background-color: red;
+    position: relative;
+}
+
+.Menu__item-link + .Menu__item-link {
+    margin-left: 10px;
+}
+
+.rule {
+    position: absolute;
+    border-radius: 50px;
+    background-color: rgb(56, 143, 191);
+    top: calc(100% - 4px);
+    left: 0;
+    height: 2px;
+    width: 0;
+    box-shadow: -1px 1px 1px 0px rgba(56, 143, 191, 0.1);
+    // transition: all 0.2s ease-out 0.01s;
+}

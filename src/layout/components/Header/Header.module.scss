@@ -84,10 +84,12 @@
 }
 
 .foreword--img {
+    margin-top: 20px;
     border-radius: 8px;
     background-size: contain;
+    background-repeat: no-repeat;
     width: 30%;
-    background-image: url('../../../assets/imgs/header_person.jpeg');
+    background-image: url('../../../assets/imgs/header_person.png');
 }
 
 // Loi mo dau
@@ -131,8 +133,4 @@
 
 .foreword-main-text + .foreword-main-text {
     margin-top: 4px;
-}
-
-.img {
-    object-fit: contain;
 }

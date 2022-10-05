@@ -1,5 +1,5 @@
 .wrapper {
-    height: 750px;
+    height: 780px;
     background-image: url('../../../assets/imgs/background_header.jpg');
     background-repeat: no-repeat;
     background-position: top;
@@ -12,7 +12,7 @@
 }
 
 .wrap {
-    width: 1380px;
+    width: var(--height--web);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -34,14 +34,14 @@
     line-height: 100%;
     font-weight: 500;
     letter-spacing: 2px;
-    width: calc(100% / 3);
+    width: calc(100% / 4);
 }
 
 // controls
 .controls {
     border-radius: 5px;
     background-color: rgb(255, 255, 255, 0.1);
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     box-shadow: -2px 0px 1px 4px rgba(237, 235, 237, 0.03);
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@
 .form {
     display: flex;
     color: var(--text-color);
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     display: flex;
     justify-content: flex-end;
 }
@@ -76,6 +76,8 @@
 .container {
     margin-top: 48px;
     width: 100%;
+    padding: 0 24px 16px 24px;
+    box-shadow: -4px 4px 10px 1px rgba(255, 255, 255, 0.747);
     display: flex;
 }
 
@@ -84,6 +86,8 @@
 }
 
 .foreword--img {
+    border: 2px solid #fff;
+    box-shadow: -140px 4px 2px 3px rgba(255, 255, 255, 0.747);
     margin-top: 20px;
     border-radius: 8px;
     background-size: contain;
@@ -94,11 +98,12 @@
 
 // Loi mo dau
 .foreword-main {
-    font-size: 10rem;
-    line-height: 10.2rem;
+    font-size: 8rem;
+    line-height: 10rem;
     display: inline-block;
     letter-spacing: 8px;
-    font-weight: 800;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 .foreword-main--min {
@@ -111,15 +116,15 @@
 }
 
 .foreword-main-max {
-    font-size: 12rem;
+    font-size: 6rem;
     color: #fff;
     letter-spacing: 8px;
-    line-height: 12.6rem;
+    line-height: 6rem;
 }
 
 .foreword-main-content {
     width: 100%;
-    margin-top: 26px;
+    margin-top: 34px;
 }
 
 .foreword-main-text {

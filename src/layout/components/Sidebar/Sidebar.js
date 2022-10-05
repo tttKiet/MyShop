@@ -1,28 +1,29 @@
+import { faList, faShirt, faFire } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
+import Menu from '~/components/Menu';
 import styles from './Sidebar.module.scss';
 
 const cx = classNames.bind(styles);
 const menu = [
     {
-        name: 'Danh Mục',
-        icon: 'fa-solid fa-list-radio',
-        children: [
-            {
-                name: 'Ao',
-                icon: 'fa-regular fa-shirt',
-            },
-            {
-                name: 'Quan',
-                icon: 'fa-regular fa-shirt',
-            },
-        ],
+        name: 'ALL',
+    },
+    {
+        name: 'Product',
+    },
+    {
+        name: 'Popular',
     },
 ];
 
 function Sidebar() {
-    return <div className={cx('sidebar')}>
-        
-    </div>;
+    return (
+        <div className={cx('sidebar')}>
+            <div className={cx('wrapper')}>
+                <Menu data={menu} />
+            </div>
+        </div>
+    );
 }
 
 export default Sidebar;

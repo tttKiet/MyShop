@@ -1,5 +1,3 @@
-import Image from '~/components/Image';
-import images from '~/assets/imgs';
 import MenuItem from '~/components/MenuItem';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';

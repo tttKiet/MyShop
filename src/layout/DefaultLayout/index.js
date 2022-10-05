@@ -42,7 +42,7 @@ function DefaultLayout({ children }) {
                     <Sidebar />
                     <div lassName={cx('content')}>{children}</div>
                 </div>
-                <div className={cx('background--layerblack')}></div>
+                {/* <div className={cx('background--layerblack')}></div> */}
             </div>
             <Footer />
         </div>

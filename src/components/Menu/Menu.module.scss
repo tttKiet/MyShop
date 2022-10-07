@@ -59,4 +59,13 @@
 .wrapper > button:last-child {
     border-radius: 10px;
     border: 1px solid #6e6d7a;
+    position: relative;
+}
+
+.wrapper > button:first-child::before {
+    content: '';
+    position: absolute;
+    left: calc(100% + 60px);
+    height: 30px;
+    border-left: 1px solid #ccc;
 }

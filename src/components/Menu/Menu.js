@@ -1,6 +1,5 @@
 import { faBarChart } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 

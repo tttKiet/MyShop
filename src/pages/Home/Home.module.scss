@@ -1,3 +1,111 @@
 .home {
-    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 34px;
+    gap: 12px;
+    padding: 12px 0;
+    border-radius: 8px;
+}
+
+.wapper {
+    max-height: 312px;
+    // height: 290px;
+}
+
+.products {
+    height: 100%;
+    cursor: pointer;
+}
+
+.item {
+    height: 100%;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 1px 1px 0px rgba(17, 17, 17, 0.121);
+    justify-content: space-between;
+}
+
+.item:hover {
+    position: relative;
+    top: -4px;
+    box-shadow: -1px 1px 1px 1px #333;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease-in-out;
+    z-index: 1000;
+}
+
+.wrap_img {
+    padding: 0 8px;
+    // background-color: rgba(6, 6, 6, 0.218);
+    height: 220px;
+    // border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+.wrap__item-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 12px 12px 12px;
+}
+
+.name {
+    font-size: 1.4rem;
+    height: 22px;
+    width: 212px;
+    max-height: 2.2rem;
+    line-height: 2.2rem;
+    color: #0d0c22;
+    margin: 0;
+    font-weight: 700;
+    padding: 0 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name ~ p,
+.price {
+    font-size: 1.4rem;
+    color: var(--text-color-back);
+}
+
+.count_buy {
+    font-size: 1.2rem;
+    background-color: #aeaeae79;
+    border-radius: 20rem 1rem 4rem 10rem / 40rem 2rem 30rem 12rem;
+    padding: 4px 8px;
+}
+
+.price {
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-left: -12px;
+    padding: 2px 8px;
+    background-color: #0d0c22;
+    border-radius: 2rem 1rem 4rem / 0.5rem 3rem;
+}
+
+.wrap_price {
+    margin-top: 12px;
+    width: 100%;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
 }

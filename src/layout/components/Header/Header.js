@@ -7,8 +7,9 @@ const cx = classNames.bind(styles);
 function Header({ menu }) {
     return (
         <header className={cx('wrapper')}>
-            <div className={cx('wrap')}>
-                {/* Menu header */}
+            {/* Menu header */}
+
+            <div className={cx('wrap_inner')}>
                 <div className={cx('inner')}>
                     <div className={cx('logo')}>B T K vava Shoppe</div>
                     <div className={cx('controls')}>
@@ -24,7 +25,8 @@ function Header({ menu }) {
                         })}
                     </div>
                 </div>
-
+            </div>
+            <div className={cx('wrap')}>
                 {/* Duoi Menu header */}
 
                 <div className={cx('Line')}></div>
@@ -51,10 +53,9 @@ function Header({ menu }) {
                                 với các mùa và bộ sưu tập. Phong cách là một biểu hiện kéo dài qua nhiều mùa và thường
                                 được kết nối với các phong trào văn hóa và các dấu hiệu xã hội, biểu tượng, giai cấp và
                                 văn hóa (ví dụ: Baroque, Rococo...). Theo nhà xã hội học Pierre Bourdieu, thời trang có
-                                nghĩa là "thời trang mới nhất, sự khác biệt mới nhất". Tôi, SẼ mang đến cho bạn một trãi
-                                nghiệm hoàn toàn củ.
+                                nghĩa là "thời trang mới nhất, sự khác biệt mới nhất".
                             </h5>
-                            <h5 className={cx('foreword-main-text')}>VIETTEL HÃY NÓI THEO CÁCH CỦA BẠN !!!!</h5>
+                            <h5 className={cx('foreword-main-text')}>FOLLOW ME!!</h5>
                         </div>
                     </div>
 

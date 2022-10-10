@@ -62,13 +62,12 @@
 .name {
     font-size: 1.4rem;
     height: 22px;
-    width: 212px;
+    max-width: 200px;
     max-height: 2.2rem;
     line-height: 2.2rem;
     color: #0d0c22;
     margin: 0;
     font-weight: 700;
-    padding: 0 20px;
     letter-spacing: 2px;
     text-align: center;
     white-space: nowrap;

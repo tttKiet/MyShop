@@ -1,4 +1,3 @@
-import { faList, faShirt, faFire } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import Menu from '~/components/Menu';
 import styles from './Sidebar.module.scss';
@@ -6,13 +5,25 @@ import styles from './Sidebar.module.scss';
 const cx = classNames.bind(styles);
 const menu = [
     {
-        name: 'ALL',
+        id: 0,
+        name: 'Tất cả',
+        active: true,
+        key: 'all',
     },
     {
-        name: 'Product',
+        id: 1,
+        name: 'Đồ công nghệ',
+        key: 'tech',
     },
     {
-        name: 'Popular',
+        id: 2,
+        name: 'Đồ thể thao',
+        key: 'sport',
+    },
+    {
+        id: 3,
+        name: 'Quần áo',
+        key: 'clothes',
     },
 ];
 

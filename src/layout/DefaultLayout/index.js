@@ -1,3 +1,4 @@
+import { StoreProvider } from '~/store';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Sidebar from '../components/Sidebar';
@@ -39,10 +40,11 @@ function DefaultLayout({ children }) {
             <div className={cx('wrapper')}>
                 <div className={cx('container')}>
                     {/* Controls bi thieu */}
-                    <Sidebar />
-                    <div lassName={cx('content')}>{children}</div>
+                    <StoreProvider>
+                        <Sidebar />
+                        <div lassName={cx('content')}>{children}</div>
+                    </StoreProvider>
                 </div>
-                {/* <div className={cx('background--layerblack')}></div> */}
             </div>
             <Footer />
         </div>

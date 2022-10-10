@@ -24,8 +24,8 @@
     padding: 8px 16px;
     text-align: center;
     color: var(--text-color-back);
-    border: none;
-    transition: all ease 1s;
+    border: 1px solid transparent;
+    transition: all ease 0.3s;
     cursor: pointer;
     background-color: #ffffff;
 }
@@ -41,7 +41,7 @@
 
 .icon {
     font-size: 1.4rem;
-    transition: all ease 1s;
+    transition: all ease 0.3s;
     padding: 0 2px;
     margin-right: 8px;
     color: var(--text-color-back);
@@ -68,4 +68,20 @@
     left: calc(100% + 60px);
     height: 30px;
     border-left: 1px solid #ccc;
+}
+
+.active_btn {
+    color: var(--text-color-back);
+    border: 1px solid #6e6d7a;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.active_btn:hover {
+    color: var(--text-color-back);
+    box-shadow: none;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: text;
 }

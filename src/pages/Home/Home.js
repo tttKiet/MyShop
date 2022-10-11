@@ -13,7 +13,15 @@ function Home() {
     return (
         <div className={cx('home')}>
             {products.map((item, i) => {
-                return <ProductItem name={item.name} source={item.source} key={i} price={item.price} />;
+                return (
+                    <ProductItem
+                        name={item.name}
+                        source={item.source}
+                        key={i}
+                        price={item.price}
+                        bought={item.bought}
+                    />
+                );
             })}
         </div>
     );

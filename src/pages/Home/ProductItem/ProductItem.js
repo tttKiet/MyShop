@@ -3,7 +3,7 @@ import styles from '../Home.module.scss';
 
 const cx = classNames.bind(styles);
 
-function ProductItem({ name, source, price }) {
+function ProductItem({ name, source, price, bought, link }) {
     return (
         <div className={cx('wapper')}>
             <div className={cx('products')}>
@@ -14,7 +14,7 @@ function ProductItem({ name, source, price }) {
                     <div className={cx('wrap__item-content')}>
                         <h3 className={cx('name')}>{name}</h3>
                         <p className={cx('wrap_price')}>
-                            <span className={cx('count_buy')}>Đã bán 24.5k</span>
+                            <span className={cx('count_buy')}>Đã bán {bought}</span>
                             <i className={cx('price')}>{price}</i>
                         </p>
                     </div>

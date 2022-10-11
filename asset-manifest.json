@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.80c7d8d6.css",
+    "main.js": "/static/js/main.8bd133ce.js",
+    "static/js/787.ff12b9f6.chunk.js": "/static/js/787.ff12b9f6.chunk.js",
+    "static/media/br9.jpg": "/static/media/br9.9f000d726d86ea5e44f7.jpg",
+    "static/media/me1.jpg": "/static/media/me1.208dab8b5d22d95b56eb.jpg",
+    "static/media/mu1.jpg": "/static/media/mu1.a795e4fca4d409d7c33b.jpg",
+    "static/media/chelsea.jpg": "/static/media/chelsea.29e6c17e721c10b0f455.jpg",
+    "static/media/rea.jpg": "/static/media/rea.81a7e98626f24ccf0b5d.jpg",
+    "static/media/haland.jpg": "/static/media/haland.e8f697974a99ec92cd9c.jpg",
+    "static/media/b1.jpg": "/static/media/b1.da0e81c583de7c3178d7.jpg",
+    "static/media/ablack.jpg": "/static/media/ablack.dff0c2d555bd529cebae.jpg",
+    "static/media/Arsernal.jpg": "/static/media/Arsernal.47f07b4555e31c0a4169.jpg",
+    "static/media/b2.jpg": "/static/media/b2.3edeed2e7f70004cb347.jpg",
+    "static/media/mutrang.jpg": "/static/media/mutrang.85d85e7de76966002bc0.jpg",
+    "static/media/b3.jpg": "/static/media/b3.3fbe0e6a274a158b53e8.jpg",
+    "static/media/c1.jpg": "/static/media/c1.238131b4e14757adcfcf.jpg",
+    "static/media/header_person.png": "/static/media/header_person.cc37515f4d0b2c5f5042.png",
+    "static/media/rArsernal.jpg": "/static/media/rArsernal.673754dbadd73f90008b.jpg",
+    "index.html": "/index.html",
+    "main.80c7d8d6.css.map": "/static/css/main.80c7d8d6.css.map",
+    "main.8bd133ce.js.map": "/static/js/main.8bd133ce.js.map",
+    "787.ff12b9f6.chunk.js.map": "/static/js/787.ff12b9f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80c7d8d6.css",
+    "static/js/main.8bd133ce.js"
+  ]
+}

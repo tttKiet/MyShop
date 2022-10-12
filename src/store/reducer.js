@@ -4,8 +4,6 @@ const menu = products.reduce((initialValue, item) => {
     return initialValue.concat(item.menu);
 }, []);
 
-console.log(menu);
-
 const initState = {
     products: menu,
 };
@@ -48,6 +46,33 @@ function reducer(state, action) {
             }, []);
             return {
                 products: newState,
+            };
+        }
+        case 'popular': {
+            let lastProducts = [...menu];
+            lastProducts.sort((a, b) => {
+                let x = a.bought;
+                let y = b.bought;
+                if (x.charAt(x.length - 1) === 'k') {
+                    x = parseFloat(x.slice(0, x.length - 1)) * 1000;
+                } else if (x.charAt(x.length - 1) !== 'k') {
+                    x = parseFloat(x);
+                }
+
+                if (y.charAt(y.length - 1) === 'k') {
+                    y = parseFloat(y.slice(0, y.length - 1)) * 1000;
+                } else if (y.charAt(y.length - 1) !== 'k') {
+                    y = parseFloat(y);
+                }
+                return y - x;
+            });
+            return {
+                products: lastProducts,
+            };
+        }
+        case 'loc': {
+            return {
+                products: menu,
             };
         }
         default: {

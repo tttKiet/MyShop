@@ -20,6 +20,7 @@ function Home() {
                         key={i}
                         price={item.price}
                         bought={item.bought}
+                        link={item.link}
                     />
                 );
             })}

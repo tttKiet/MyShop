@@ -6,8 +6,8 @@ const cx = classNames.bind(styles);
 function ProductItem({ name, source, price, bought, link }) {
     return (
         <div className={cx('wapper')}>
-            <div className={cx('products')}>
-                <div className={cx('item')}>
+            <div className={cx('products')} title={name}>
+                <a target="_blank" href={link} className={cx('item')}>
                     <div className={cx('wrap_img')}>
                         <img className={cx('img')} src={source} />
                     </div>
@@ -18,7 +18,9 @@ function ProductItem({ name, source, price, bought, link }) {
                             <i className={cx('price')}>{price}</i>
                         </p>
                     </div>
-                </div>
+                </a>
+
+                <span className={cx('sum')}>+</span>
             </div>
         </div>
     );

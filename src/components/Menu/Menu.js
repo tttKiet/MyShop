@@ -4,7 +4,7 @@ import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 import { useState, useContext } from 'react';
 import { StoreContext } from '~/store';
-import { searchAll, searchSport, searchTech, searchClothes } from '~/store/actions';
+import { searchAll, searchSport, searchTech, searchClothes, searchPopular, LOC } from '~/store/actions';
 
 const cx = classNames.bind(styles);
 
@@ -32,9 +32,15 @@ function Menu({ data }) {
         }
     };
 
+    const handlePopular = () => {
+        dispatch(searchPopular());
+    };
+
     return (
         <div className={cx('wrapper')}>
-            <button className={cx('item', 'menu-item')}>Phổ biến</button>
+            <button className={cx('item', 'menu-item')} onClick={handlePopular}>
+                Phổ biến
+            </button>
             <div className={cx('item', 'controls')}>
                 {dataLast.map((item, i) => {
                     return (
@@ -51,7 +57,7 @@ function Menu({ data }) {
                     );
                 })}
             </div>
-            <button className={cx('item', 'menu-item')}>
+            <button className={cx('item', 'menu-item')} onClick={() => dispatch(LOC())}>
                 <FontAwesomeIcon className={cx('icon')} icon={faBarChart} />
                 Lọc
             </button>

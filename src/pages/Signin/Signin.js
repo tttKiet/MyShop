@@ -4,6 +4,8 @@ import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './Signin.module.scss';
 
+import Logo from '~/layout/components/Header/Logo';
+
 const cx = classNames.bind(styles);
 
 function Signin() {

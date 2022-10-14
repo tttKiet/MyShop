@@ -1,11 +1,11 @@
 import MenuItem from '~/components/MenuItem';
+import Logo from './Logo';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
-
 function Header({ menu }) {
     return (
         <header className={cx('wrapper')}>
@@ -13,7 +13,12 @@ function Header({ menu }) {
 
             <div className={cx('wrap_inner')}>
                 <div className={cx('inner')}>
-                    <div className={cx('logo')}>B T K</div>
+                    <div className={cx('logo')}>
+                        {/* LOGO */}
+                        {/* <img src={require('~/assets/imgs/logo.png')} alt="Logo hư gòi!" />
+                         */}
+                        <Logo />
+                    </div>
                     <div className={cx('controls')}>
                         <ul className={cx('item__list')}>
                             {menu.menuItem.map((item, i) => {

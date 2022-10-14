@@ -47,6 +47,20 @@
     width: calc(100% / 4);
 }
 
+.logo-sgv {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.logo-sgv > svg {
+    width: 60px;
+}
+
+.wrap_logo > .wrap_logo-link {
+    display: block;
+    width: 60px;
+}
+
 // controls
 .controls {
     border-radius: 5px;

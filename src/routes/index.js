@@ -29,7 +29,7 @@ const publicRoutes = [
         layout: OnlyHeader,
     },
     {
-        path: 'shopitem',
+        path: '/shopitem',
         component: ShopItem,
         layout: null,
     },

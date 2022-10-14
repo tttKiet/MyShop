@@ -9,27 +9,27 @@ const cx = classNames.bind(styles);
 
 const menuItem = [
     {
-        name: 'Nổi bật',
+        name: 'Start',
     },
     {
-        name: 'Quần áo',
+        name: 'Products',
     },
     {
-        name: 'Giày dép',
+        name: 'Volume',
     },
     {
-        name: 'Hàng điện tử',
+        name: 'Infomration',
     },
 ];
 
 const headerMenuForm = [
     {
-        name: 'Đăng nhập',
+        name: 'Sign in',
         to: '/signin',
     },
     {
-        name: 'Đăng kí',
-        to: '/register',
+        name: 'Sign up',
+        to: '/signup',
     },
 ];
 

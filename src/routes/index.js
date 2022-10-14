@@ -2,6 +2,7 @@ import Home from '~/pages/Home';
 import Signin from '~/pages/Signin';
 import Profile from '~/pages/Profile';
 import ShopItem from '~/pages/ShopItem';
+import Signup from '~/pages/Signup';
 
 // Route: tuyen duong => Dung chung
 // Layouts
@@ -15,6 +16,11 @@ const publicRoutes = [
     {
         path: '/signin',
         component: Signin,
+        layout: null,
+    },
+    {
+        path: '/signup',
+        component: Signup,
         layout: null,
     },
     {
